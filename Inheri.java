@@ -14,14 +14,21 @@ class Songs{
 
 //child:
 class Fav extends Songs{
-    Songs fv = new Songs();
     void fav(){
         songs.add("kanmani");
         System.out.println(songs);
     }
 }
 
-
+class Gym extends Songs{
+    void gym(){
+        songs.add("Unstoppable");
+        songs.add("Believer");
+        songs.add("SkyFall");
+        songs.add("neeye oli");
+        System.out.println(songs);
+    }
+}
 
 
 
@@ -32,6 +39,10 @@ class Inheri{
         play.song();
         System.out.println("Fav Songs: ");
         play.fav();
+        Gym gym = new Gym();
+        System.out.println("Gym Songs: ");
+        gym.gym();
+
         
     }
 }
